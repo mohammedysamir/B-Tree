@@ -1,3 +1,5 @@
+#include<iostream>
+using namespace std;
 template <typename T>
 class Key {
 	T data;
@@ -8,9 +10,10 @@ public:
 		right = NULL;
 		left = NULL;
 	}
-	Key(T d, Key* r, Key* l) {
-		date = d;
-		right = r;
-		left = l;
+	Key(T d) {
+		data = d;
+	}
+	T getdata() {
+		return data;
 	}
 };

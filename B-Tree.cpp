@@ -1,18 +1,18 @@
 #include<iostream>
 #include"Node.cpp"
 using namespace std;
-template <typename T,int O>
+template <class T, int Order>
 class BTree{
-	Node<T>* mainNode;
+	Node<T,Order>* mainNode;
 public:
-	B_Tree() {
-		mainNode = new mainNode(O);
-		cout << "assigned order of 1" << endl;
+	BTree() {
+		mainNode = new Node<T,Order>();
+		cout << "Assigned of order : " << Order << endl;
 	}
 	void Insert(T k){
-
+		mainNode->insert(k);
 	}
 	void Print(){
-
+		
 	}
 };
